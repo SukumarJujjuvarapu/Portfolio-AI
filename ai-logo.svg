@@ -1,0 +1,40 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="56" y1="56" x2="456" y2="456" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2A0A70"/>
+      <stop offset="1" stop-color="#0B0224"/>
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="120" y1="110" x2="430" y2="410" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8DDCFF"/>
+      <stop offset="1" stop-color="#2EDBC3"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="150" y1="210" x2="360" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A8F0FF"/>
+      <stop offset="1" stop-color="#45E2CF"/>
+    </linearGradient>
+    <linearGradient id="starGrad" x1="72" y1="78" x2="220" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF90E8"/>
+      <stop offset="1" stop-color="#EAA3FF"/>
+    </linearGradient>
+    <filter id="glow" x="0" y="0" width="512" height="512" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="14" y="14" width="484" height="484" rx="98" fill="url(#bgGrad)"/>
+
+  <g filter="url(#glow)">
+    <path d="M140 124C140 114.059 148.059 106 158 106H342C383.974 106 418 140.026 418 182V340C418 349.941 409.941 358 400 358C390.059 358 382 349.941 382 340V182C382 159.909 364.091 142 342 142H158C148.059 142 140 133.941 140 124Z" fill="url(#ringGrad)"/>
+    <path d="M106 170C106 160.059 114.059 152 124 152C133.941 152 142 160.059 142 170V330C142 352.091 159.909 370 182 370H318C327.941 370 336 378.059 336 388C336 397.941 327.941 406 318 406H182C140.026 406 106 371.974 106 330V170Z" fill="url(#ringGrad)"/>
+  </g>
+
+  <path d="M70 122C91 116 98 109 104 84C110 109 117 116 138 122C117 128 110 135 104 160C98 135 91 128 70 122Z" fill="url(#starGrad)"/>
+  <path d="M144 84C178 74 190 62 198 30C206 62 218 74 252 84C218 94 206 106 198 138C190 106 178 94 144 84Z" fill="url(#starGrad)"/>
+  <path d="M98 206C123 200 131 193 137 170C143 193 151 200 176 206C151 212 143 219 137 242C131 219 123 212 98 206Z" fill="url(#starGrad)"/>
+
+  <text x="255" y="295" text-anchor="middle" font-family="Sora, Arial, sans-serif" font-size="150" font-weight="700" fill="url(#textGrad)">AI</text>
+</svg>
